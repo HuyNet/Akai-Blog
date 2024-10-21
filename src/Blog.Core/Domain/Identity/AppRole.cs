@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Blog.Core.Domian.Identity
+namespace Blog.Core.Domain.Identity
 {
     [Table("AppRoles")]
     public class AppRole : IdentityRole<Guid>

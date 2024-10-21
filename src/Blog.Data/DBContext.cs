@@ -1,5 +1,5 @@
-﻿using Blog.Core.Domian.Content;
-using Blog.Core.Domian.Identity;
+﻿using Blog.Core.Domain.Identity;
+using Blog.Core.Domain.Content;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;

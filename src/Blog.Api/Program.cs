@@ -1,4 +1,4 @@
-using Blog.Core.Domian.Identity;
+using Blog.Core.Domain.Identity;
 using Blog.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -18,7 +18,7 @@ builder.Services.AddIdentity<AppUser, AppRole>(options =>options.SignIn.RequireC
 
 builder.Services.Configure<IdentityOptions>(options =>
     {
-        //password setting rerquire
+        //password setting require
         options.Password.RequireDigit = true;
         options.Password.RequireLowercase = true;
         options.Password.RequireNonAlphanumeric = true;
@@ -36,9 +36,6 @@ builder.Services.Configure<IdentityOptions>(options =>
         options.User.RequireUniqueEmail = true;
     }
 ); 
-
-
-
 
 //Default config foe ASP.NET Core
 builder.Services.AddControllers();

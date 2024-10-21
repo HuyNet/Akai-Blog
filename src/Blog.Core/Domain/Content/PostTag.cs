@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
 
-namespace Blog.Core.Domian.Content
+namespace Blog.Core.Domain.Content
 {
     [Table("PostTags")]
     [PrimaryKey(nameof(PostID),nameof(TagID))]

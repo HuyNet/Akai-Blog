@@ -1,8 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Design;
+﻿using Microsoft.EntityFrameworkCore.Design;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
-namespace Blog.Data
+namespace Blog.Data_Relationship
 {
     public class DBContextFactory : IDesignTimeDbContextFactory<DBContext>
     {

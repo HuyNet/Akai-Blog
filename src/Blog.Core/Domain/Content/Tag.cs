@@ -1,18 +1,15 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Blog.Core.Domian.Content
+namespace Blog.Core.Domain.Content
 {
-    [Table("PostActivityLogs")]
-    public class PostActivityLog
+    [Table("Tags")]
+    public class Tag
     {
         [Key]
         public Guid ObjectID { get; set; }
-        [MaxLength(250)]
-        public string? Note { get; set; }
-
-        public PostStatus FromStatus {get;set;}
-        public PostStatus ToStatus {get;set;}
+        [MaxLength(100)]
+        public string Name { get; set; }
 
         public DateTime DateCreated { get; set; }
         public DateTime? DateModifeid { get; set; }
